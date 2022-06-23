@@ -19,6 +19,24 @@ p {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 1090px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3, button {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .company-description h3 {
+    font-size: 1rem;
+  }
+}
+
 /*header section */
 header {
   display: flex;
@@ -46,6 +64,40 @@ nav li {
 nav a {
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .logo {
+    display: none;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  nav li {
+    padding: 0 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  .mobile {
+    display: none;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+
+  .company-description h3 {
+    font-size: 0.8rem;
+  }
+
 }
 
 /*journeys section */
@@ -79,6 +131,23 @@ nav a {
 .description {
   padding: 5%;
 }
+
+@media only screen and (max-width: 1090px) {
+  .image-container {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .image-container {
+    height: 300px;
+  }
+
+  .content {
+    height: 800px;
+  }
+}
+
 /*about us section */
 
 #about {
@@ -87,6 +156,11 @@ nav a {
 
 .company-description {
   text-align: center;
+  padding: 0 5%;
+}
+
+.company-description h3 {
+  font-size: 1.2rem;
 }
 
 .container {
